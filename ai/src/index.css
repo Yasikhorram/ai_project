@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+}
+header {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Bebas Neue", cursive;
+}
+textarea {
+  background-color: #dddd;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 6em 9em;
+  outline: none;
+  font-weight: 500px;
+  font-size: 18px;
+  line-height: 1.4;
+  width: 200px;
+  height: 100px;
+  transition: all 0.2s;
+}
+textarea:hover {
+  cursor: pointer;
+  background-color: #eeee;
+}
+textarea:focus {
+  cursor: text;
+  color: white;
+  background-color: mediumslateblue;
+  border: 2px solid #333333;
+}
