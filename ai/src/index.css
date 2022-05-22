@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Heebo", sans-serif;
+  background-color: #a1a9fe;
 }
 header {
   width: 100%;
@@ -10,6 +11,7 @@ header {
   align-items: center;
   font-size: 50px;
   font-family: "Bebas Neue", cursive;
+  color: mediumslateblue;
 }
 textarea {
   background-color: #dddd;
@@ -23,6 +25,9 @@ textarea {
   width: 200px;
   height: 100px;
   transition: all 0.2s;
+  display: block;
+  margin: 0 auto 100px auto;
+  display: block;
 }
 textarea:hover {
   cursor: pointer;
@@ -35,23 +40,11 @@ textarea:focus {
   border: 2px solid #333333;
 }
 
-/* button.submit {
-  font-size: 4rem;
-  display: inline-block;
-  text-decoration: none;
-  color: pink;
-  border: var(--clr-neon) 0.125em solid;
-  border-radius: 1em;
-  padding: 0.25em 1em;
-
-  text-shadow: 0 0 0.125em currentColor;
-} */
-
 button {
-  position: relative;
-  display: inline-block;
+  margin: 0 auto;
+  display: block;
   padding: 15px 30px;
-  color: #2196f3;
+  color: mediumslateblue;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
@@ -59,9 +52,11 @@ button {
   overflow: hidden;
   transition: 0.2s;
   cursor: pointer;
+  border-radius: 20px;
+  border: none;
 }
 button:hover {
-  color: #255784;
-  background: #2196f3;
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  color: #ffaebc;
+  background: mediumslateblue;
+  box-shadow: 0 0 10px #ffaebc, 0 0 40px #ffaebc, 0 0 80px #ffaebc;
 }

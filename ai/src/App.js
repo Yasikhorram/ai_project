@@ -1,11 +1,16 @@
 import Header from "./Header";
 import Form from "./Form";
 import { useState } from "react";
+import Responses from "./Responses";
 import { Configuration, OpenAIApi } from "openai";
 
 function App() {
   const [newPrompt, setNewPrompt] = useState("");
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState([
+    { id: 1, topic: "sdkfkjdjfsd" },
+    { id: 2, topic: "testing2" },
+    { id: 3, topic: "testing3" },
+  ]);
 
   async function onSubmit(event) {
     event.preventDefault();
@@ -34,7 +39,7 @@ function App() {
         newPrompt={newPrompt}
         onSubmit={onSubmit}
       />
-      <div>{result}</div>
+      <Responses result={result} />
     </div>
   );
 }

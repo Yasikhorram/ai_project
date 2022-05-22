@@ -1,9 +1,7 @@
 function Form({ setNewPrompt, newPrompt, onSubmit }) {
   return (
     <form className="addForm" onSubmit={onSubmit}>
-      <label htmlFor="prompt">
-        Enter prompt <em>* </em>
-      </label>
+      <label htmlFor="prompt"></label>
       <textarea
         autoFocus
         required
