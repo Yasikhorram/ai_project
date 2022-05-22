@@ -1,11 +1,12 @@
-function Form({ setNewPrompt, newPrompt }) {
+function Form({ setNewPrompt, newPrompt, onSubmit }) {
   return (
-    <form className="addForm" onSubmit={(e) => e.preventDefault()}>
+    <form className="addForm" onSubmit={onSubmit}>
       <label htmlFor="prompt">
         Enter prompt <em>* </em>
       </label>
       <textarea
         autoFocus
+        required
         id="prompt"
         type="text"
         placeholder="Add Item"
@@ -13,7 +14,7 @@ function Form({ setNewPrompt, newPrompt }) {
         rows="10"
         value={newPrompt}
         onChange={(e) => setNewPrompt(e.target.value)}
-        placeholder="Enter your prompt"
+        placeholder="Enter an prompt"
       ></textarea>
 
       <button type="submit" aria-label="submit prompt">
