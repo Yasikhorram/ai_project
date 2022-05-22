@@ -17,7 +17,7 @@ function Form({ setNewPrompt, newPrompt, onSubmit }) {
         placeholder="Enter an prompt"
       ></textarea>
 
-      <button type="submit" aria-label="submit prompt">
+      <button className="submit" type="submit" aria-label="submit prompt">
         Submit
       </button>
     </form>
