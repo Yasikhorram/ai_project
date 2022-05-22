@@ -1,9 +1,8 @@
+import Response from "./Response";
 function Responses({ result }) {
   return (
     <div>
-      {result.map((item) => (
-        <h2 className="response">{item.topic}</h2>
-      ))}
+      <Response />
     </div>
   );
 }
